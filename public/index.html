@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratical Work Web 1</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./JS/main.js"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-blue-700 flex">
+    <section class="container mx-auto flex justify-center items-center">
+       <div>
+        <div class="flex justify-start items-center mt-10">
+            <h1 class="text-[18px] font-semibold text-gray-200">Pratical Work for web 1</h1>
+        </div>
+            <div class="bg-white text-gray-700 w-[600px] card h-[455px] border rounded-md overflow-y-auto shadow-md mb-20 mt-10">
+                <!-- QUESTION 1 -->
+                <div class="py-2 border-b border-blue-500">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-8 text-[16px] font-semibold">
+                                    <p class="text-gray-400">Calculatrice</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 bg-gradient-to-r from-blue-300 to-blue-500 rounded-md px-3">
+                                        <input type="text" placeholder="nombre 1" id="inputnb1" class="text-center  focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        
+                                            <select name="" id="combobox" class="py-1 rounded-md font-semibold focus:outline-none">
+                                                <option value="+" class="text-center">+</option>
+                                                <option value="-" class="text-center">-</option>
+                                                <option value="x" class="text-center">x</option>
+                                                <option value=":" class="text-center">:</option>
+                                            </select>
+                             
+                                        <input type="text" placeholder="nombre 2" id="inputnb2" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="button" onclick="calculatrice()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input id="inputres" type="text" placeholder="Resultat" disabled class="text-center  focus:outline-none  bg-white rounded-md w-[90px] px-1 py-1">
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 2 -->
+
+                <div class="py-2 border-b border-blue-500">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-7 text-[16px] font-semibold">
+                                    <p class="text-gray-400">Big Number</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 rounded-md pr-2 pl-[9px] bg-gradient-to-r from-blue-300 to-blue-500">
+                                        <input type="text" placeholder="nombre 1" id="nb1" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <label for="" class="py-1 px-3">et</label>
+                             
+                                        <input type="text" placeholder="nombre 2" id="nb2" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="button" onclick="bignumber()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="big number" disabled id="rep" class="text-center focus:outline-none  bg-white rounded-md w-[90px] px-1 py-1">
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 3 -->
+
+                <div class="py-2 border-b border-gray-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[76px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Circle</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 rounded-md pr-4 pl-[9px] bg-gradient-to-r from-gray-400 to-gray-500 ">
+                                        <input type="text" placeholder="angle" id="angle" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="button" onclick="Angle()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="sin" disabled id="sin" class="text-center focus:outline-none bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="text" placeholder="cos" disabled id="cos" class="text-center focus:outline-none  bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="text" placeholder="tangente" disabled id="tan" class="text-center focus:outline-none bg-white rounded-md w-[70px] px-1 py-1"> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 4 -->
+
+                <div class="py-2 border-b border-gray-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-11 text-[16px] font-semibold">
+                                    <p class="text-gray-400">Rectangle</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-gray-400 to-gray-500 ">
+                                        <input type="text" placeholder="Width" id="long" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="text" placeholder="Height" id="larg" class="text-center focus:outline-none bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="button" onclick="Surf()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Surface" id="surf" disabled class="text-center focus:outline-none  bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="text" placeholder="Perimeter" id="perim" disabled class="text-center focus:outline-none bg-white rounded-md w-[75px] px-1 py-1"> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- QUESTION 5 -->
+
+                 <div class="py-2 border-b border-emerald-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[68px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Carree</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-emerald-300 to-emerald-500 ">
+                                        <input type="text" placeholder="Cote" id="cote" class="text-center focus:outline-none bg-white rounded-md w-[120px] px-1 py-1">
+                                        <input type="button" onclick="Carree()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Surface" id="surfac" disabled class="text-center focus:outline-none  bg-white rounded-md w-[100px] px-5 py-1">
+                                        <input type="text" placeholder="Perimeter" id="perimet" disabled class="text-center focus:outline-none bg-white rounded-md w-[93px] px-1 py-1"> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 6 -->
+
+                <div class="py-2 border-b border-green-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[57px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Triangle</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-emerald-300 to-emerald-500 ">
+                                        <input type="text" placeholder="base" id="base" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="text" placeholder="hauteur" id="hauteur" class="text-center focus:outline-none bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="button" onclick="triangle()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[30px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Surface" id="surface" disabled class="text-center focus:outline-none  bg-white rounded-md w-[140px] px-1 py-1">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 7 -->
+
+                <div class="py-2 border-b border-blue-500">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[75px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Circle</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-4 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-blue-300 to-blue-500">
+                                        <input type="text" placeholder="Rayon" id="rayon" class="text-center focus:outline-none bg-white rounded-md w-[140px] px-1 py-1">
+                                        <input type="button" onclick="cercle()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[30px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Surface" id="surfa" disabled class="text-center focus:outline-none  bg-white rounded-md w-[140px] px-1 py-1">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- QUESTION 8 -->
+
+                 <div class="py-2 border-b border-blue-500">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[55px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Losange</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-blue-300 to-blue-500 ">
+                                        <input type="text" placeholder="D"  id="D" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="text" placeholder="d"  id="d" class="text-center focus:outline-none bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="button" onclick="losange()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[30px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Surface" id="s" disabled class="text-center focus:outline-none  bg-white rounded-md w-[140px] px-1 py-1">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 9 -->
+
+                <div class="py-2 border-b border-gray-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[59px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Trapeze</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-gray-400 to-gray-500 ">
+                                        <input type="text" placeholder="Big Base" id="B" class="text-center focus:outline-none bg-white rounded-md w-[85px] px-1 py-1">
+                                        <input type="text" placeholder="Small base" id="b" class="text-center focus:outline-none bg-white rounded-md w-[90px] px-1 py-1">
+                                        <input type="text" placeholder="hauteur" id="haut" class="text-center focus:outline-none  bg-white rounded-md w-[70px] px-1 py-1">
+                                        <input type="button" onclick="trapeze()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Aire" id="aire" disabled class="text-center focus:outline-none bg-white rounded-md w-[60px] px-1 py-1"> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 10 -->
+
+                <div class="py-2 border-b border-gray-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[78px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Cube</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-gray-400 to-gray-500 ">
+                                        <input type="text" placeholder="cote" id="coteCube" class="text-center focus:outline-none bg-white rounded-md w-[163px] px-1 py-1">
+                                        <input type="button" onclick="cube()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Aire" id="surfaceCube" disabled class="text-center focus:outline-none bg-white rounded-md w-[160px] px-1 py-1"> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTION 11 -->
+
+                <div class="py-2 border-b border-gray-400">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex justify-start items-center space-x-3">
+                                <div class="ml-4 mr-[65px] text-[16px] font-semibold">
+                                    <p class="text-gray-400">Sphere</p>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <form action="" method="post" class=" w-[382px] h-[48px] space-x-1 py-2 pr-3 rounded-md pl-[9px] bg-gradient-to-r from-emerald-300 to-emerald-500 ">
+                                        <input type="text" placeholder="Rayon" id="rayonSph" class="text-center focus:outline-none bg-white rounded-md w-[163px] px-1 py-1">
+                                        <input type="button" onclick="sphere()" class="text-center focus:outline-none btnrep  bg-slate-100 rounded-sm w-[20px]  px-1 py-1" value="="></input>
+                                        <input type="text" placeholder="Aire" id="aireSphere" disabled class="text-center focus:outline-none bg-white rounded-md w-[160px] px-1 py-1"> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+</body>
+</html>

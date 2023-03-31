@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card::-webkit-scrollbar{
+	width: 7px;
+}
+
+.card::-webkit-scrollbar-thumb{
+	@apply bg-slate-300;
+}
+
+.card::-webkit-scrollbar-thumb:hover{
+	@apply bg-slate-400;
+}
+.card::-webkit-scrollbar-thumb{
+	border-radius: 50px;
+}
+
+.card1::-webkit-scrollbar{
+	width: 7px;
+}
+
+.card1::-webkit-scrollbar-thumb{
+	@apply bg-slate-300;
+}
+
+.card1::-webkit-scrollbar-thumb:hover{
+	@apply bg-slate-400;
+}
+.card1::-webkit-scrollbar-thumb{
+	border-radius: 50px;
+}
