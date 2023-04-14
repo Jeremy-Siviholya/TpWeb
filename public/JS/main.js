@@ -62,11 +62,11 @@ function Angle()
         alert("Veuiller remplir les champs")
     }
     else{
-        var angle=parseInt(document.getElementById('angle').value);
+        let angle=parseInt(document.getElementById('angle').value);
         //const rad=Math.sin(angle * Math.PI /180.0)
-        var sin=Math.sin(angle * Math.PI /180.0)
-        var cos=Math.cos(angle * Math.PI /180.0)
-        var tan= sin/cos
+        let sin=Math.sin(angle * Math.PI /180.0)
+        let cos=Math.cos(angle * Math.PI /180.0)
+        let tan= sin/cos
         if(angle==90 || angle==270)
         {
             cos=0;
@@ -90,8 +90,8 @@ function Surf()
         alert("Veuiller remplir les champs")
     }
    else{
-    var long=parseFloat(document.getElementById('long').value);
-    var larg=parseFloat(document.getElementById('larg').value);
+    let long=parseFloat(document.getElementById('long').value);
+    let larg=parseFloat(document.getElementById('larg').value);
     const surf=long*larg;
     const perim=(long+larg)*2;
     document.getElementById('surf').value=surf;
@@ -106,7 +106,7 @@ function Carree()
         alert("Veuiller remplir les champs")
     }
     else{
-    var cote=parseFloat(document.getElementById('cote').value);
+    let cote=parseFloat(document.getElementById('cote').value);
     const surf=(Math.pow(cote,2));
     const perim=cote*4;
     document.getElementById('surfac').value=surf;
@@ -122,8 +122,8 @@ function triangle()
     }
     else
     {
-        var base=parseFloat(document.getElementById('base').value);
-        var hauteur=parseFloat(document.getElementById('hauteur').value);
+        let base=parseFloat(document.getElementById('base').value);
+        let hauteur=parseFloat(document.getElementById('hauteur').value);
         const surf=(base * hauteur)/2
         document.getElementById('surface').value=surf;
     }
@@ -137,7 +137,7 @@ function cercle()
     }
     else
     {
-        var rayon=parseFloat(document.getElementById('rayon').value);
+        let rayon=parseFloat(document.getElementById('rayon').value);
         const pi=3.14;
         const surface=(pi*pi)*(rayon*rayon)
         document.getElementById('surfa').value=surface;
@@ -152,8 +152,8 @@ function losange()
     }
     else
     {
-        var D=parseFloat(document.getElementById('D').value);
-        var d=parseFloat(document.getElementById('d').value);
+        let D=parseFloat(document.getElementById('D').value);
+        let d=parseFloat(document.getElementById('d').value);
         const f=(D*d)/2;
         document.getElementById('s').value=f;
     }
@@ -165,9 +165,9 @@ function trapeze(){
         alert("Veuiller remplir les champs")
     }
     else{
-        var bigBase=parseFloat(document.getElementById('B').value)
-        var smallBase=parseFloat(document.getElementById('b').value)
-        var hauteur=parseFloat(document.getElementById('haut').value);
+        let bigBase=parseFloat(document.getElementById('B').value)
+        let smallBase=parseFloat(document.getElementById('b').value)
+        let hauteur=parseFloat(document.getElementById('haut').value);
         const aire=(bigBase+smallBase)*(hauteur/2);
         document.getElementById('aire').value=aire;
     }
@@ -175,7 +175,7 @@ function trapeze(){
 
 function cube()
 {
-    var s=parseFloat(document.getElementById('coteCube').value)
+    let s=parseFloat(document.getElementById('coteCube').value)
     if(document.getElementById('coteCube').value==="")
     {
         alert("Veuiller remplir les champs")
